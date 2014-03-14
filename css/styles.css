@@ -1,50 +1,56 @@
 /* Your Website Styles */
 
 
-.container {
+body {
+	background: #7C7159;
+}
 
-	background: blue;
-	height: 250px;
-	width: 1000px;
+.show {
+	margin-top: 75px;
+	background: none;
+	border-radius: 5px;
+}
+
+div a img {
+	border: 8px solid #77A490;
+	margin: 3px;
+}
+
+.target {
+		border: 8px solid #77A490;
+	position: absolute;
+	left: 750px;
+	top: 190px;
 }
 
 
-a {
-	text-decoration: none;
-	color: black;
-
+.view {
+	position: fixed;
+	left: 550px;
+	top: 20px;
+  font-family: sans-serif;
+  background: #086B63;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 3px;
 }
 
-.home {
-	color: black;
+.target img {
+  opacity: 0;
+    -webkit-transition: .5s ease-in-out;
 }
 
-
-nav {
-	margin-top: 100px;
-	padding-bottom: 20px;
-}
-
-
-h1 {
-	margin: 0;
-}
-
-
-li {
-	display: inline;
-	padding: 0px 12px 12px 12px;
-
-}
-
-ul {
-	margin: 0;
-	padding-left: 151px;
-
+.target:target img {
+  opacity: 1;
 }
 
 
-/* Show Grid */
+
+
+
+
+/* Show Grid 
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
-}
+} */
