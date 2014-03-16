@@ -1,5 +1,10 @@
 /* Your Website Styles */
 
+h1 {
+	font-family: 'Arimo', sans-serif;
+	color: white;
+}
+
 
 body {
 	background: #7C7159;
@@ -38,7 +43,18 @@ div a img {
 
 .target img {
   opacity: 0;
+  border: 0px;
     -webkit-transition: .5s ease-in-out;
+}
+
+.target p {
+	  opacity: 0;
+    -webkit-transition: .5s ease-in-out;
+
+}
+
+.target:target p {
+	opacity: 1;
 }
 
 .target:target img {
