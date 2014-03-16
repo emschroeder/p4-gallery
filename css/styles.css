@@ -5,6 +5,17 @@ h1 {
 	color: white;
 }
 
+.logo {
+	height: 30%;
+	width: 30%;
+	position: relative;
+	top: 20px;
+	left: 150px;
+}
+
+p {
+	font-family: 'Arimo', sans-serif;
+}
 
 body {
 	background: #7C7159;
@@ -19,13 +30,20 @@ body {
 div a img {
 	border: 8px solid #77A490;
 	margin: 3px;
+	width: 15%;
+	height: 15%;
+}
+
+div a img:hover {
+	border: 8px solid #086B63;
+	    -webkit-transition: .25s ease-in-out;
 }
 
 .target {
-		border: 8px solid #77A490;
+
 	position: absolute;
 	left: 750px;
-	top: 190px;
+	top: 290px;
 }
 
 
@@ -49,15 +67,22 @@ div a img {
 
 .target p {
 	  opacity: 0;
+	  border: 0px;
     -webkit-transition: .5s ease-in-out;
 
 }
 
 .target:target p {
+	max-width: 300px;
+			border: 8px solid #086B63;
+			background: #086B63;
 	opacity: 1;
 }
 
 .target:target img {
+	width: 50%;
+	height: 50%;
+			border: 8px solid #086B63;
   opacity: 1;
 }
 
